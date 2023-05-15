@@ -13,9 +13,9 @@ node {
             app = docker.build("annusinha/project1")    
        }     
       
-       stage('Push image') {
-       	withDockerRegistry([ credentialsId: "dockerhub", url: "" ]) {
-        app.push()
-	   	}
-       }
+//        stage('Push image') {
+//        	withDockerRegistry([ credentialsId: "dockerhub", url: "" ]) {
+//         app.push()
+// 	   	}
+//        }
 }
